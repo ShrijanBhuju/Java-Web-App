@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\Administrator\Downloads\AP CW 2\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1401864480.index
+1888495608.index
+2773034519.index
+82734230.index
+2988276862.index
+343145417.index
+71032393.index

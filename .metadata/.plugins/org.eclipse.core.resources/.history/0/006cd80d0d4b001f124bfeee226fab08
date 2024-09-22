@@ -1,0 +1,80 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/View/CSS/register.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    </head>
+
+    <body>
+        <section class="sign-up">
+            <form action="/MediaTech/registration" method="POST" enctype="multipart/form-data">
+                <div class="input-field">
+                    <h1>Sign Up</h1>
+
+                    <div class="image-field" id="image-field">
+                        <img src="data:image/jpeg;base64,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?v=${time}"
+                            class="showImage" width="200px" height="240px">
+                        <input type="file" id="file" name="image" class="imageChooser" value="profile-eg.png"
+                            onchange="onImageChange()" required />
+                    </div>
+
+                    <div class="fields">
+                        <span class="name">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+                        </span>
+                        <span class="email">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                        </span>
+                        <span class="password">
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" placeholder="Enter Password"
+                                name="password"="Enter Password" required>
+                        </span>
+                        <span class="confirm-password">
+                            <label for="confirm-password">Confirm Password: </label>
+                            <input type="password" name="confirm-password" id="confirm-password"
+                                placeholder="Re-Enter Password" required>
+                        </span>
+                    </div>
+                    <% if(request.getAttribute("emailMsg") !=null){ %>
+                        <p class="message">
+                            <%= request.getAttribute("emailMsg")%>
+                        </p>
+                        <%} %>
+                            <% if(request.getAttribute("passMsg") !=null){ %>
+                                <p class="message">
+                                    <%= request.getAttribute("passMsg")%>
+                                </p>
+                                <%} %>
+                                    <br>
+                                    <input type="submit" value="Sign Up">
+
+                                    <a href="${pageContext.request.contextPath}/View/Login.jsp" class="login-btn">Log
+                                        In</a>
+                </div>
+
+
+            </form>
+        </section>
+        <script>
+            function onImageChange() {
+                var imageChooser = document.querySelector(".imageChooser");
+                var showImage = document.querySelector(".showImage");
+                showImage.src = URL.createObjectURL(imageChooser.files[0]);
+            }
+        </script>
+    </body>
+
+    </html>

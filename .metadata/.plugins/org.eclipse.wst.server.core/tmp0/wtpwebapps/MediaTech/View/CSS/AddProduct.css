@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --mainColor: #039164;
+}
+h2{
+	font-weight: 600;
+	font-size: 24px;
+	color: rgba(0,0,0,0.4);
+	text-align: center;
+	width: 100%;
+	margin: 20px 0;
+}
+.admin-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #039164; /* Theme background color */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+textarea{
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	resize: none;
+}
+.admin-header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-header a:hover {
+    background-color: #039164; /* Matching color */
+}
+
+/* Container for the form */
+.add-product-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements */
+.add-product-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-product-form input[type="text"],
+.add-product-form input[type="number"] {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-product-form .top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add-product-form .top > div {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.add-product-form .bottom {
+    margin-top: 20px;
+}
+
+.add-product-form button[type="submit"],
+.add-product-form a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-product-form button[type="submit"] {
+    background-color: #039164;
+    color: white;
+}
+
+.add-product-form a {
+    background-color: #ccc;
+    color: #333;
+}
+
+.add-product-form button[type="submit"]:hover,
+.add-product-form a:hover {
+    background-color: #039164;
+}
+
+

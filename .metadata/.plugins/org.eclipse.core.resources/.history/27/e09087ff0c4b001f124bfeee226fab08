@@ -1,0 +1,80 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/View/CSS/register.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    </head>
+
+    <body>
+        <section class="sign-up">
+            <form action="/MediaTech/registration" method="POST" enctype="multipart/form-data">
+                <div class="input-field">
+                    <h1>Sign Up</h1>
+
+                    <div class="image-field" id="image-field">
+                        <img src="${pageContext.request.contextPath}/View/Images/profile-eg.png?v=${time}"
+                            class="showImage" width="200px" height="240px">
+                        <input type="file" id="file" name="image" class="imageChooser" value="profile-eg.png"
+                            onchange="onImageChange()" required />
+                    </div>
+
+                    <div class="fields">
+                        <span class="name">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+                        </span>
+                        <span class="email">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                        </span>
+                        <span class="password">
+                            <label for="password">Password: </label>
+                            <input type="password" id="password" placeholder="Enter Password"
+                                name="password"="Enter Password" required>
+                        </span>
+                        <span class="confirm-password">
+                            <label for="confirm-password">Confirm Password: </label>
+                            <input type="password" name="confirm-password" id="confirm-password"
+                                placeholder="Re-Enter Password" required>
+                        </span>
+                    </div>
+                    <% if(request.getAttribute("emailMsg") !=null){ %>
+                        <p class="message">
+                            <%= request.getAttribute("emailMsg")%>
+                        </p>
+                        <%} %>
+                            <% if(request.getAttribute("passMsg") !=null){ %>
+                                <p class="message">
+                                    <%= request.getAttribute("passMsg")%>
+                                </p>
+                                <%} %>
+                                    <br>
+                                    <input type="submit" value="Sign Up">
+
+                                    <a href="${pageContext.request.contextPath}/View/Login.jsp" class="login-btn">Log
+                                        In</a>
+                </div>
+
+
+            </form>
+        </section>
+        <script>
+            function onImageChange() {
+                var imageChooser = document.querySelector(".imageChooser");
+                var showImage = document.querySelector(".showImage");
+                showImage.src = URL.createObjectURL(imageChooser.files[0]);
+            }
+        </script>
+    </body>
+
+    </html>

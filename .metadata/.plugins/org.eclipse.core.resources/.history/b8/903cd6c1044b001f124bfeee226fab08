@@ -1,0 +1,132 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    filter: blur(0);
+    transition: filter 0.3s ease;
+}
+/* Container for the sign-up form */
+/* Container for the sign-up form */
+.sign-up {
+    width: 100%;;
+	min-height: 100vh;
+	background: url('/MediaTech/View/Images/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-attachment: fixed;
+}
+.sign-up form{
+	margin: 50px 0;
+}
+/* Main content area */
+.input-field {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sign-up form heading */
+.input-field h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Image field */
+.image-field {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-field img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+.fields{
+	display: flex;
+	flex-flow: wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 620px;
+}
+/* Form fields */
+.input-field span {
+    display: inline-block;
+    max-width: 300px;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+.input-field label {
+	display: inline-block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.input-field input[type="text"],
+.input-field input[type="email"],
+.input-field input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Error message */
+.message {
+    color: red;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    background: #fff4f4;
+    border: 1px solid red;
+    border-radius: 4px;
+}
+.return{
+    margin-top: 20px;
+    display: inline-block;
+}
+/* Submit button */
+.input-field input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #88e2f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-field input[type="submit"]:hover {
+    background-color: #62a4af;
+}
+
+/* Log in link */
+.login-btn {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #666;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    text-decoration: underline;
+}
+
+

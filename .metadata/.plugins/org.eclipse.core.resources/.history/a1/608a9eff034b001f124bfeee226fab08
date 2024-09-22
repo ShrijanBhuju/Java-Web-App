@@ -1,0 +1,100 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.login-form{
+	width: 100%;;
+	height: 100vh;
+	background: url('/MediaTech/View/Images/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* Login form container */
+.login-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login form content */
+.login-content {
+    text-align: center;
+}
+
+/* Login form heading */
+.login-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Login form input fields */
+.login-input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Login form button */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #88e2f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.login-button:hover{
+	background: #68adb9;
+}
+
+/* Login form paragraph */
+.login-para {
+    margin-top: 15px;
+}
+
+.login-para a {
+    color: #88e2f2;
+    text-decoration: none;
+    width: 100%;
+    padding: 7px;
+    color: 88e2f2;
+    border: 2px solid #88e2f2;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    display: inline-block;
+}
+
+.login-para a:hover {
+	background: #88e2f2;
+	color: white;
+}
+
+/* Return to home link */
+.return-home {
+    display: block;
+    margin-top: 15px;
+    color: #666;
+    text-decoration: none;
+}
+
+.return-home:hover {
+    text-decoration: underline;
+}
+
